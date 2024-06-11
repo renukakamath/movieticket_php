@@ -2,12 +2,12 @@
 
 if(isset($_POST['sub'])){
 	extract($_POST);
-	$q="INSERT INTO `login` VALUES(null,'$uname','$pss','production')";
+	$q="INSERT INTO `login` VALUES(null,'$uname','$pss','theater')";
 	$ids=insert($q);
-	$qry="INSERT INTO `production` VALUES(null,'$ids','$fname','$place','$phone','$email')";
+	$qry="INSERT INTO `theater` VALUES(null,'$ids','$fname','$city','$pin','$phone','$email')";
 	insert($qry);
   alert("registration Successful");
-    return redirect("login.php");
+    return redirect("theaterreg.php");
 }
 ?> 
 <style>
@@ -27,20 +27,29 @@ if(isset($_POST['sub'])){
           <center>
           <form  method="post">
 
-    <h2 style="font-size: 30px;color:white" class="text-white" id="hstyle">Production Registraion</h2>
+    <h2 style="font-size: 30px;color:white" class="text-white" id="hstyle">theater Registraion</h2>
 <table class="table "  style="color:white" >
     <tr>
-        <th>Name </th>
+        <th> Name </th>
         <td><input type="text" required class="form-control" name="fname" id=""></td>
     </tr>
+
+   
     <tr>
-        <th>Place </th>
-        <td><input type="text" required class="form-control" name="place" id=""></td>
+        <th>city </th>
+        <td><input type="text" required class="form-control" name="city" id=""></td>
     </tr> 
+      
+<tr>
+        <th>Pin Code </th>
+        <td><input type="text"  pattern="[0-9]{6}"  required class="form-control" name="pin" id=""></td>
+    </tr>
+    
     <tr>
         <th>Phone </th>
-        <td><input type="number" required class="form-control" name="phone" id=""></td>
+        <td><input type="text"  pattern="[0-9]{10}" required   class="form-control" name="phone" id=""></td>
     </tr>
+
     <tr>
         <th>Email</th>
         <td><input type="email" required class="form-control" name="email" id=""></td>

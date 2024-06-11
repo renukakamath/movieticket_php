@@ -59,8 +59,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<li style="visibility: hidden;"><a  href="#about" class="scroll"><span ">Login</span></a></li>
 								<li><a href="index.php" ><span>Home</span></a></li>
 								<li><a href="login.php" ><span>Login</span></a></li>
-								<li><a href="reg.php" ><span>Registration</span></a></li>
-								<li><a href="upcomingmovies.php" ><span>Upcoming Movies</span></a></li>
+								<li><a href="reg.php" ><span>Production SignUP</span></a></li>
+								<li><a href="userreg.php" ><span>User SignUP</span></a></li>
+
+								<li><a href="theaterreg.php"><span>Teater Signup</span></a></li>
 							
 							</ul>
 						</nav>

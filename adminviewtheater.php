@@ -1,4 +1,4 @@
-<?php include'producerheader.php';
+<?php include'adminheader.php';
 ?>
 <div style="width: 100%;height: 200px;background: url('images/netflixbg.jpg');" >
 
@@ -14,30 +14,34 @@
     }
 </style>
 <center>
-    <h1 class="g-head">View Actors</h1> 
+    <h1 class="g-head">View Theater</h1> 
           <table class="table" style="box-shadow: 0px 0px 16px 1px hsl(264,44%,32%);width: 97%;margin-top: 20px;" >
             <tr align="">
-                <th></th>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>phone</th>
+                
+
+                
+                <th>name</th>
+                <th>city</th>
+                <th>pin</th>
              
-                <th>Email</th>
+                <th>phone</th>
+                <th>email</th>
             </tr>
             <?php 
-            $q="select * from actors  ";
+            $q="select * from theater  ";
             $res=select($q);
 
             $i=1;
             foreach($res as $row){
             ?>
             <tr align="">
-                <td><a href="<?php echo $row['photo']?>"><img width="100" height="100" src="<?php echo $row['photo']?>" alt=""></a></td>
-                <td><?php echo $row['firstname']?></td>
-                <td><?php echo $row['lastname']?></td>
+                
+                <td><?php echo $row['name']?></td>
+                <td><?php echo $row['city']?></td>
+                <td><?php echo $row['pin']?></td>
                 <td><?php echo $row['phone']?></td>
-                <td><?php echo $row['email']?></td>
-                <td><a class="btn btn-warning" href="producerviewactorschedule.php?aid=<?php echo $row['actor_id']  ?>">View Schedule</a></td>
+                <td><?php echo $row['email'] ?></td>
+              <!--   <td><a class="btn btn-warning" href="producerviewactorschedule.php?aid=<?php echo $row['theater_id']  ?>">View Schedule</a></td> -->
                 
             </tr>
             <?php }?>

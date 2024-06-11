@@ -55,14 +55,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1" style="background: linear-gradient(90deg,#000,#000);height: 120px !important;">
 						<nav class="link-effect-14" id="link-effect-14">
 							<ul class="nav navbar-nav" style="padding-top: 28px;color:red !important;">
-								<li ><a href="directorhome.php"><span>Home</span></a></li>
-								<li ><a  href="directorsetfilimschedule.php" ><span ">Filim Schedule</span></a></li>
-								<li><a href="directorviewactorschedule.php" ><span>Actor Schedule</span></a></li>
-								<li><a href="directormovietrailer.php" ><span>Add Trailer</span></a></li>
-								<li><a href="directorchat.php" ><span>Chat</span></a></li>
-								<li><a href="directorrecentchat.php" ><span>Recent chat</span></a></li>
+								<li ><a href="theaterhome.php"><span>Home</span></a></li>
+								<li ><a  href="theateraddscreen.php" ><span ">Add Screen</span></a></li>
+								<li><a href="teaterviewbooking.php" ><span>Booking</span></a></li>
+								<li><a href="salesreport.php" ><span>Report</span></a></li>
+							
 								
-								<li><a href="index.php" ><span>Logout</span></a></li>
+								<li><a href="login.php" ><span>Logout</span></a></li>
 							
 							</ul>
 						</nav>

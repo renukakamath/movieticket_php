@@ -12,57 +12,49 @@ if(isset($_POST['sub'])){
         $lid=$_SESSION['lid'];
 
 
-    if ($res[0]['usertype'] == 'producer'){
+    if ($res[0]['usertype'] == 'admin'){
         alert("login Successfully");
-        return redirect("producerhome.php");
+        return redirect("adminhome.php");
     }
     
-    else if($res[0]['usertype'] == 'distributor'){
-     $q="select * from distributors where login_id='$lid'";
+    else if($res[0]['usertype'] == 'production'){
+     $q="select * from production where login_id='$lid'";
         $val = select($q);
         if (sizeof($val) > 0){
-            $_SESSION['did']=$val[0]['distributor_id'];
-            $did=$_SESSION['did'];
+            $_SESSION['pid']=$val[0]['production_id'];
+            $pid=$_SESSION['pid'];
             alert("login Successfully");
             return redirect("distributorhome.php");
         }
     }
 
 
-    else if($res[0]['usertype'] == 'director'){
-        $q="select * from director where login_id='$lid'";
+    else if($res[0]['usertype'] == 'theater'){
+        $q="select * from theater where login_id='$lid'";
         $val = select($q);
         if (sizeof($val) > 0){
-            $_SESSION['dirid']=$val[0]['director_id'];
-            $dirid=$_SESSION['dirid'];
-            $_SESSION['mid']=$val[0]['movie_id'];
-            $fid=$_SESSION['mid'];
+            $_SESSION['theater_id']=$val[0]['theater_id'];
+            $theater_id=$_SESSION['theater_id'];
+           
             alert("login Successfully");
-            return redirect("directorhome.php");
+            return redirect("theaterhome.php");
         }
     }
 
-    else if($res[0]['usertype'] == 'production controller'){
-        $q="select * from production_controller where login_id='$lid'";
-        $val = select($q);
-        if (sizeof($val) > 0){
-            $_SESSION['cid']=$val[0]['controller_id'];
-            $cid=$_SESSION['cid'];
-            alert("login Successfully");
-            return redirect("controllerhome.php");
-        }
-    }
+   
 
-    else if($res[0]['usertype'] == 'actor'){
-        $q="select * from actors where login_id='$lid'";
+    else if($res[0]['usertype'] == 'customer'){
+        $q="select * from customer where login_id='$lid'";
         $val = select($q);
         if (sizeof($val) > 0){
-            $_SESSION['aid']=$val[0]['actor_id'];
-            $aid=$_SESSION['aid'];
+            $_SESSION['customer_id']=$val[0]['customer_id'];
+            $cid=$_SESSION['customer_id'];
             alert("login Successfully");
             return redirect("actorhome.php");
         }
     }
+}else{
+    alert('invalid username  and  password');
 }
 }
 ?> 

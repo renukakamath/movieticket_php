@@ -68,7 +68,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<p><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>+0000 123 456</p>
 			</div>
 			<div class="logo animated wow zoomIn" data-wow-delay=".5s">
-				<h1 class="ml-5"><a href="index.html"><span></span>Movie Planner</a></h1>
+				<h1 class="ml-5"><a href="login.php"><span></span>Movie Planner</a></h1>
 			</div>
 			<div class="banner-social animated wow slideInRight" data-wow-delay=".5s">
 				<ul class="social-icons">

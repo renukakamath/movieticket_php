@@ -56,11 +56,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<nav class="link-effect-14" id="link-effect-14">
 							<ul class="nav navbar-nav" style="padding-top: 28px;color:red !important;">
 								<li ><a href="distributorhome.php"><span>Home</span></a></li>
-								<li ><a  href="distributorviewfilims.php" ><span ">Available Filims</span></a></li>
-								<li><a href="distributorcheckbid.php" ><span>Cheack bid status</span></a></li>
+								<li ><a  href="production_manageopertunity.php" ><span ">Manage opportunities</span></a></li>
+								<li><a href="production_viewrequest.php" ><span>View Request</span></a></li>
 							
 								
-								<li><a href="index.php" ><span>Logout</span></a></li>
+								<li><a href="login.php" ><span>Logout</span></a></li>
 							
 							</ul>
 						</nav>

@@ -55,16 +55,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1" style="background: linear-gradient(90deg,#000,#000);height: 120px !important;">
 						<nav class="link-effect-14" id="link-effect-14">
-							<ul class="nav navbar-nav" style="padding-top: 28px;color:red !important;">
-								<li ><a href="producerhome.php"><span>Home</span></a></li>
-								<li ><a  href="produceraddmovie.php" ><span ">Movie</span></a></li>
-								<li><a href="producerviewactors.php" ><span>Actors</span></a></li>
-								<li><a href="producerviewfilimschedule.php" ><span>Filim Schedule</span></a></li>
-								<li><a href="producerchat.php" ><span>Messages</span></a></li>
-								<li><a href="producerrecentchat.php" ><span>Recent chat</span></a></li>
-								<li><a href="producemakeauction.php" ><span>MaKe Auction</span></a></li>
-								<li><a href="producerviewauction.php" ><span>View Bids</span></a></li>
-								<li><a href="index.php" ><span>Logout</span></a></li>
+							<ul class="nav navbar-nav" style="padding-top: 20px;color:red !important;">
+								<li ><a href="adminhome.php"><span>Home</span></a></li>
+								<li ><a  href="adminaddmovie.php" ><span ">Movie</span></a></li>
+								<li><a href="adminaddtype.php" ><span>Type</span></a></li>
+								<li><a href="admin_managetime.php" ><span>Time</span></a></li>
+								<li><a href="adminviewtheater.php" ><span> theater</span></a></li>
+								<li><a href="adminviewcutomer.php" ><span> customer</span></a></li>
+								<li><a href="admin_viewseattype.php" ><span> Seat Type</span></a></li>
+								
+								<li><a href="login.php" ><span>Logout</span></a></li>
 							
 							</ul>
 						</nav>

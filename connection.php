@@ -1,6 +1,6 @@
 <?php 
 session_start();
-$con=mysqli_connect('localhost','root','','movieplanner',3306);
+$con=mysqli_connect('localhost','root','roots','movieticket',3306);
  function insert($qry){
  	$res=mysqli_query($GLOBALS['con'],$qry);
  	return mysqli_insert_id($GLOBALS['con']);

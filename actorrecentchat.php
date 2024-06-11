@@ -59,7 +59,7 @@
     <?php 
 
    
-    $q="SELECT usertype,login_id AS rid,CONCAT(firstname,' ',lastname) AS NAMES FROM `director` INNER JOIN login USING (login_id) WHERE login_id IN( SELECT IF(sender_id='$lid',receiver_id,sender_id) FROM messages WHERE `sender_id`='$lid' OR receiver_id='$lid') UNION SELECT usertype,login_id AS rid,Product_house_name AS NAMES FROM `producer` INNER JOIN login USING (login_id) WHERE login_id IN( SELECT IF(sender_id='$lid',receiver_id,sender_id) FROM messages WHERE `sender_id`='$lid' OR receiver_id='$lid') UNION SELECT usertype,login_id AS rid,CONCAT(firstname,' ',lastname) AS NAMES FROM `production_controller` INNER JOIN login USING (login_id) WHERE login_id IN( SELECT IF(sender_id='$lid',receiver_id,sender_id) FROM messages WHERE `sender_id`='$lid' OR receiver_id='$lid')
+   echo $q="SELECT usertype,login_id AS rid,CONCAT(firstname,' ',lastname) AS NAMES FROM `director` INNER JOIN login USING (login_id) WHERE login_id IN( SELECT IF(sender_id='$lid',receiver_id,sender_id) FROM messages WHERE `sender_id`='$lid' OR receiver_id='$lid') UNION SELECT usertype,login_id AS rid,Product_house_name AS NAMES FROM `producer` INNER JOIN login USING (login_id) WHERE login_id IN( SELECT IF(sender_id='$lid',receiver_id,sender_id) FROM messages WHERE `sender_id`='$lid' OR receiver_id='$lid') UNION SELECT usertype,login_id AS rid,CONCAT(firstname,' ',lastname) AS NAMES FROM `production_controller` INNER JOIN login USING (login_id) WHERE login_id IN( SELECT IF(sender_id='$lid',receiver_id,sender_id) FROM messages WHERE `sender_id`='$lid' OR receiver_id='$lid')
   ";
      $res=select($q);
 

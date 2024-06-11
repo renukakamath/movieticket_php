@@ -56,11 +56,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<nav class="link-effect-14" id="link-effect-14">
 							<ul class="nav navbar-nav" style="padding-top: 28px;color:red !important;">
 								<li ><a href="actorhome.php"><span>Home</span></a></li>
-								<li ><a  href="actorviewfilimschedule.php" ><span ">Filim Schedules</span></a></li>
-								<li ><a  href="actormanageschedule.php" ><span ">My Schedule</span></a></li>
-								<li ><a  href="actorchat.php" ><span ">Chat</span></a></li>
-								<li ><a  href="actorrecentchat.php" ><span ">Recent chat</span></a></li>
-					
+								<li ><a  href="actorviewfilimschedule.php" ><span ">Films</span></a></li>
+								<li ><a  href="user_cart.php" ><span ">My cart</span></a></li>
+								<li ><a  href="user_viewmybookings.php" ><span "> Bookings </span></a></li>
+								<li ><a  href="user_viewoppertunities.php" ><span ">Oppertunities</span></a></li>
+					<li><a href="user_viewrequest.php">View Request</a></li>
 								
 								<li><a href="index.php" ><span>Logout</span></a></li>
 							
